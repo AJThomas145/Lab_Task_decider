@@ -34,5 +34,5 @@ class TestTaskDecider(unittest.TestCase):
         self.assertEqual("Clean Windows", get_preferred_option(self.task1, self.task3))
 
     def test_which_task_is_preferred_tasks_the_same(self):
-        
+        self.assertEqual("Wash Dishes", get_preferred_option(self.task1, self.task1))
       

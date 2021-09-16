@@ -5,7 +5,7 @@ def tasks_match(task1, task2):
 
 def get_preferred_option(task1, task2):
     if task1 == task2:
-        return task1
+        return task1.name
     elif task1.name == "Wash Dishes":
         if task2.name == "Cook Dinner":
             return "Wash Dishes"
